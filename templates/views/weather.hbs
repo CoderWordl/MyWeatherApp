@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{>headerlinks}}
+</head>
+
+<body>
+    <!-- main navbar of the website -->
+
+    {{>navbar}}
+
+    <!-- main header -->
+    <div class="container-fluid main_header">
+        <div class="row">
+            <div class="mx-auto">
+
+                <div class="main_content">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Please Enter Your City Name</label>
+                            <input type="text" class="form-control" id="exampleInputEmail1">
+                        </div>
+                        <button type="submit" class="btn btn-primary" id="btn">Submit</button>
+                    </form>
+                </div>
+                <h1 id="myError">Please Enter The City Name Properly</h1>
+                <div class="temp_Output my-4 data_hide">
+                    <div class="card">
+                        {{!-- <img src="..." class="card-img-top" alt="..."> --}}
+                        <div id="temp_status">
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title text-center" id="mytemp">0 &deg;C</h1>
+                            <p class="card-text text-center" id="countryName"><span id="usercityname">__</span>, <span id="usercountryname">__</span></p>
+                            <p class="card-text text-center" id="todaysdate"><span id="newday">Teusday</span><span id="newdate">13 OCT</span></p>
+                            <a href="/" class="btn btn-primary">Go Home</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- Now Footer Part -->
+    {{>footer}}
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

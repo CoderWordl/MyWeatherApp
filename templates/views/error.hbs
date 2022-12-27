@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{>headerlinks}}
+</head>
+
+<body>
+    <!-- main navbar of the website -->
+
+    {{>navbar}}
+
+    <!-- main header -->
+    <section class="page404">
+        <div class="content-wrap text-center"
+            style="padding-top:15%;background-image: url('https://cdn1.byjus.com/byjus-clone/wp-content/uploads/2016/12/23101022/background-4041.jpg');">
+            <img src="https://cdn1.byjus.com/byjus-clone/wp-content/uploads/2016/12/23100935/title-image-404.png"
+                alt="title-image-404">
+            <h2 class="s-font" style="font-size: 3rem;">THIS PAGE CANNOT BE FOUND</h2>
+            <p class="description s-font" style="font-size: 1.4rem;">We are really sorry, but the page you requested is missing :(</p>
+            <p class="description s-font" style="font-size: 1.4rem;">Try going back and searching again and make sure you have the right web
+                address.</p>
+            <a href="/"><button>Go Back</button></a>
+            <div class="return">
+                <form class="search-form" method="get" id="searchform" action="https://byjus.com/">
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- Now Footer Part -->
+    {{>footer}}
+    <!-- <script src="js/main.js"></script> -->
+</body>
+
+</html>
