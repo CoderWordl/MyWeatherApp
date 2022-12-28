@@ -2,7 +2,7 @@ const express = require("express");
 const hbs = require("hbs");
 const path = require("path");
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 
 // getting the public folder path
